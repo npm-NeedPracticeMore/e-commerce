@@ -2,7 +2,7 @@
 const state = [
     {
         id: 1,
-        img: 'https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png',
+        img: './assets/blue_shoe.png',
         title: '',
         description: '',
         reviews: '12',  // ko`rishlar soni
