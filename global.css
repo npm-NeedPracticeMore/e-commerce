@@ -1,0 +1,32 @@
+:root{
+    --black:#373737;
+    --blue:#40BFFF;
+    --red:#FF4858;
+    --aqua:#BCDDFE;
+}
+ 
+/* o'zlarizni css faylllaringizga import qilasila misol un @import url(../../css.style.css) */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;0,700;1,100;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;1,100;1,500&display=swap');
+
+@font-face {
+    font-family: 'pop-m';
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100;1,500&display=swap');
+}
+@font-face {
+    font-family: 'pop-smb';
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,600;1,100;1,500&display=swap');
+}
+@font-face {
+    font-family: 'pop-r';
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;1,100;1,500&display=swap');
+}
+@font-face {
+    font-family: 'pop-b';
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;0,700;1,100;1,500&display=swap');
+}
+
+/* Bu font qismi pop-r --> regular || pop-b --> bold || pop-smb--> semi-bold || pop-m--> medium turlari qisqa qilib yozdim tushunasizlar degan umitdaman */
