@@ -1,3 +1,4 @@
+//! bu faylda ayrim barcha uchun manfaatli bo`lishi mumkun bo`lgan js kodlari saqlanadi. bu fayl boshqa joylarda chaqirilmaydi va ishlatilmaydi. Ishlaydigan kodlarning izohlari bo`lishi shart! Shuningdek barcha kodlar izohlarda bo`lishi kerak! aks holda ortiqcha kompilyatsiyalar sodir bo`lib, loyihaning ochilishi sekinlashib qoladi
 
 let da = state[0]
 window.onload =  function(){
