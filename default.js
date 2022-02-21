@@ -5,20 +5,26 @@ let da = state[0]  // product.js ning state massivining 1-elementini o`zlashtiri
 window.onload =  function(){   // GlobalEventHandlers ning target.onload property si ma'lumotlar yuklab olingandan keyingi qilinadigan ishni belgilab beradi
 
 //? html tag htmlning o`zida yaratib olinadi, js faylda unga qiymat beriladi. 
-    document.getElementById('object').innerHTML = da.category
+state.map(item =>{
+
+  
+document.getElementById('object').innerHTML += item.category
     
-    document.getElementById('ddd').innerHTML = da.badge; 
-    
+    document.getElementById('ddd').innerHTML += item.badge; 
+})
     
 //? html tag jsda yaratiladi, qiymat beriladi va html sahifadagi mavjud tagga voris(child) sifatida kiritib qo`yiladi
+
+
     let img = document.createElement("img");
 
-    img.src = state[0].img;
+    img.src = item.img;
 
     img.classList.add('imageContent');
 
     document.getElementById('image').appendChild(img);
-
 } */
+
+
 
 
