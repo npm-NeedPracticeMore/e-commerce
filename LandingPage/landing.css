@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.landing_page__navigation {
+    min-width: 100%;
+    height: 600px;
+    background-color: var(--blue)
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 100px;
+  }
+
+  .landing_page__container {
+      display: flex;
+  }
+  
+.container .box.one{
+    padding: 150px 5px 0px 35px;
+}
+
+.box.one .details .topic{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.box.one .details .topic h2 {
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+.box.one .details p{
+    color: var(--text-color);
+    font-size: 1.1em;
+    font-weight: 400;
+    padding: 1.2em 0 0.5em 0;
+}
+.box.one .details a {
+    color: var(--text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.details {
+    position: relative;
+}
+.details a:after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    bottom: -3px;
+    left: 0;
+    background-color: var(--text-color);
+}
+.container .box.two .image{
+    position: relative;
+    right: 0;
+    top: 0;
+    height: 450px;
+    width: 600px;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.container .box.two .image-box{
+    position: relative;
+    text-align: right;
+    right: 0;
+    bottom: 50px;
+}
+
+/* card uchun stillar */
+
+.landing_page__advantages {
+    margin-bottom: 6em;
+}
+
+.advantages_cards {
+    display: flex;
+}
+
+.advantage_card {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5em;
+}
+
+.advantage_card i{
+    color: var(--red);
+    font-size: 3em;
+}
+
+.advantage_card h2 {
+    padding: 1.5em 0 0.4em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.advantage_card p {
+    font-size: 0.8em;
+}
+
+
+.menu_name {
+    display: flex;
+    justify-content: center;
+}
+
+.menu_name h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+.features_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature_card .feature__image {
+    width: 70%;
+    padding: 2em;
+}
+
+.feature_card .feature__image img{
+    width: 100%;
+}
+
+.feature_card .feature__text {
+    padding: 0 4em 0 0;
+}
+
+.feature_card span {
+    color: #ccc;
+    text-transform: capitalize;
+}
+
+.feature_card .feature__text h2 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.feature_card .feature__text p {
+    font-size: 0.8em;
+}
+
+.landing_page__features {
+    margin-bottom: 6em;
+}
+
+.featured__products {
+    margin-bottom: 4em;
+}
+
+.featured_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured_card {
+    display: flex;
+}
+
+.featured_image {
+    width: 40%;
+}
+
+.featured_image img {
+    width: 100%;
+}
+
+.featured_card .featured_text {
+    padding: 0 1em;
+}
+
+.featured_card .featured_text p {
+    text-transform: capitalize;
+}
+
+.featured_card .featured_text .featured_stars {
+    padding: 0.7em 0;
+}
+
+.featured_card .featured_text span {
+    margin-right: 0.4em;
+}
+
+.featured_card .featured_text .red {
+    color: var(--red);
+}
+
+.featured_card .featured_text .discount {
+    color: #C1C8CE;
+}
+
+.input_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+.input_box input {
+    width: 350px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.input_box input, button{
+    border: 1px solid var(--blue);
+    padding: 10px 20px;
+}
+
+.input_box button {
+    background-color: var(--blue);
+    color: var(--text-color);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
+@media screen and (max-width: 476px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .landing_page__container {
+        display: block;
+    }
+
+    .box.one .details .topic{
+        font-size: 2.5em;
+    }
+    .container .box.one{
+        padding: 50px 5px 0px 35px;
+    }
+
+    .box.one .details .topic h2 {
+        font-size: 1em;
+    }
+
+    .box.one .details p{
+        font-size: 1.1em;
+        padding: 1.5em 0 1em 0;
+    }
+
+    .container .box.two .image{
+        height: 300px;
+        width:300px;
+    }
+
+    .container .box.two .image-box{
+        bottom: 70px;
+        padding-left: 60px;
+    }
+
+    .advantage_card {
+        margin-bottom: 3em;
+    }
+
+    /* card uchun stillar */
+
+    .landing_page__advantages {
+        margin-bottom: 2em;
+    }
+
+    .advantages_cards {
+        display: block;
+        margin-top: 4em;
+    }
+
+    .features_cards {
+        display: block;
+    }
+
+    .feature_card {
+        margin-bottom: 2em;
+    }
+
+    .feature_card .feature__image {
+        width: 70%;
+        padding: 2em;
+    }
+
+    .menu__title {
+        margin-bottom: 3em;
+    }
+
+    .featured__products {
+        margin-bottom: 4em;
+    }
+
+    .featured_cards {
+        display: block;
+    }
+
+    .featured_card {
+        padding: 1em 2em;
+    }
+
+    .input_box {
+        margin-bottom: 3em;
+    }
+
+    .input_box input {
+        width: 220px;
+    }
+
+}
