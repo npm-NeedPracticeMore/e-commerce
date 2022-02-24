@@ -3,6 +3,7 @@
     --blue:#40BFFF;
     --red:#FF4858;
     --aqua:#BCDDFE;
+    --text-color: #FFFFFF;
 }
  
 /* o'zlarizni css faylllaringizga import qilasila misol un @import url(../../css/style.css) */
