@@ -222,6 +222,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3em;
 }
 
 .input_box input {
