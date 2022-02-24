@@ -28,3 +28,9 @@
 }
 
 /* Bu font qismi pop-r --> regular || pop-b --> bold || pop-smb--> semi-bold || pop-m--> medium turlari qisqa qilib yozdim tushunasizlar degan umitdaman */
+
+.container{
+    width: 1320px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
