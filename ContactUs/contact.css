@@ -1,0 +1,184 @@
+/* contact us css */
+@import url('../global.css');
+:root {
+    --white:rgba(255, 255, 255, 1);
+    --bgColor:#e5e5e5;
+    --raleway:'Raleway',sans-serif;
+    --bgCircle:#40BFFF;
+}
+@font-face {
+    font-family: "Raleway";
+    src: url();
+}
+html {
+    box-sizing: border-box;
+}
+
+*,*::after, *::before {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bgColor);
+    font-family: var(--raleway);
+    font-size: 1rem;
+}
+
+h1, p {
+    margin: 0;
+}
+
+.container {
+    width: 1252px;
+    margin: 0 auto;
+}
+.contact {
+    width: 100%;
+    height: 709px;
+    margin-top: 139px;
+    margin-bottom: 135px;
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25)
+}
+.contact__img {
+    width: 624px;
+    height: 100%;
+    position: relative;
+    background-image: url('../assets/girlWithPhone.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+}
+
+.contact__img__info {
+    width: 32%;
+    transform: translate(426px,48px);
+}
+.contact__header {
+    width: 152px;
+    height: 137px;
+    margin-bottom: 50px;
+    padding-left: 21px;
+    font-family: Raleway;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 2.975rem;
+    color:var(--white);
+}
+.contact__text {
+    width: 160px;
+    font-family: Raleway;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1rem;
+    color:var(--white);
+}
+.contact__text:not(:last-child) {
+    margin-bottom: 26px;
+}
+
+.contact__form {
+    position: relative;
+    overflow: hidden;
+    padding-left: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact__form::after {
+    content: "";
+    display: inline-block;
+    width: 130px;
+    height: 133px;
+    position: absolute;
+    left: -109px;
+    border-radius: 50%;
+    background-color: var(--bgCircle);
+}
+
+#fullname, #email {
+    width: 510px;
+    height: 73px;
+    padding-left: 27px;
+    outline-color: var(--bgCircle);
+    font-size: 1rem;
+    color: rgba(55, 55, 55, 1);
+    background: #FFFFFF;
+    border: 1px solid rgba(150, 147, 147, 1);
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.01);
+    border-radius: 0px 3px 3px 0px;
+}
+#comment {
+    width: 510px;
+    height: 229px;
+    padding-top: 40px;
+    padding-left: 27px;
+    font-size: 0.875rem;
+    outline-color: var(--bgCircle);
+}
+
+label p {
+    margin-bottom: 7px;
+    font-size: 0.875rem;
+}
+/* searching query */
+
+.contact__searching {
+    width: 100%;
+    margin-bottom: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact__searching form {
+    width: 633px;
+    height: 62px;
+    display: flex;
+    border: 2px solid #BCDDFE;
+}
+.contact__searching input {
+    width: 495px;
+    height: 100%;
+    padding-left: 20px;
+    border: none;
+    outline:none;
+    font-size: 1.125rem;
+    color:rgba(38, 38, 38, 1);
+
+}
+.contact__searching button {
+    width: 135px;
+    height: 60px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: 'pop-r';
+    font-size: 1.25rem;
+    color:var(--white);
+    background-color: var(--bgCircle);
+}
+
+.validation {
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 54px;
+}
+.validation i {
+    margin-right: 5px;
+}
+.d-none {
+    display: none;
+}
+.validation__correct,.validation__correct--email {
+    color:green;
+}
+.validation__error, .validation__error--email {
+    color:red;
+}
+
+/* for mobile */
+@media (max-width:400px) {
+    
+}

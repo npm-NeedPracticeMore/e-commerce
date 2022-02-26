@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" integrity="sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./contact.css">    
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <!-- contact part -->
+        <div class="container">
+            <!-- contact part -->
+            <section class="contact">
+                    <div class="contact__img">
+                        <div class="contact__img__info">
+                            <h1 class="contact__header">get in touch</h1>
+                            <p class="contact__text">contact@e-comm.ng</p>
+                            <p class="contact__text">+234 4556 6665 34</p>
+                            <p class="contact__text">20 Prince Hakerem Lekki Phase 1, Lagos.</p>
+                        </div>
+                    </div>
+                    <!-- form part -->
+                    <form autocomplete="on" method="post" class="contact__form">
+                        <label>
+                            <p>Fullname</p>
+                            <input type="text" name="fullname" id="fullname" required placeholder="John Doe">
+                            
+                            <div class="validation">
+                                <p class="validation__error d-none">
+                                    <i class="fa fa-times"></i>
+                                    The full name can consist of alphabetical characters and spaces only
+                                </p>
+                                <p class="validation__correct d-none"> <i class="fa fa-check"></i>Valid Fullname</p>
+                            </div>
+
+                        <label>
+
+                        <label>
+                            <p>Email</p>
+                            <input type="email" name="email" id="email" required placeholder="jamesdoe@gmail.com">
+                        
+                            <div class="validation">
+                                <p class="validation__error--email d-none">
+                                    <i class="fa fa-times"></i>
+                                    You have entered an invalid email address!
+                                </p>
+                                <p class="validation__correct--email d-none"> <i class="fa fa-check"></i>Valid email address !</p>
+                            </div>
+
+                        </label>  
+
+                        <label>
+                            <p>Message</p>
+                            <textarea name="comment" id="comment"  placeholder="Type your message"></textarea>
+                        </label>
+
+                    </form>
+
+            </section>
+            <section class="contact__searching">
+                <form method="post">
+                    <input type="text" name="search" id="contact__search" placeholder="Search query" required>
+                    <button type="submit">Search</button>
+                </form>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+    <!-- contact us script -->
+    <script src="./landing.js"></script>
+</body>
+</html>
