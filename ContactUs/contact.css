@@ -178,7 +178,132 @@ label p {
     color:red;
 }
 
+@media (max-width:750px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contact {
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 800px;
+    }
+    .contact__img, .contact__form{
+        width: 100%;
+        height: 400px;
+    }
+    .contact__img__info {
+        transform: translate(210%);
+    }
+    .contact__header {
+        padding-left: 10px;
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+    }
+    .contact__text {
+        width: 140px;
+        font-size: 1rem;
+    }
+    .contact__text:not(:last-child) {
+        margin-bottom: 15px;
+    }
+    .contact__form {
+        padding-left: 0;
+        padding-top: 30px;
+    }
+    .contact__form::after {
+        width: 100px;
+        height: 100px;
+        top: -70px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .contact__form label {
+        width: 90%;
+    }
+    #fullname, #email {
+        width: 100%;
+        height: 50px;
+    }
+    #comment {
+        width: 100%;
+        height: 100px;
+    }
+    .validation {
+        margin-bottom: 20px;
+    }
+    .contact__searching {
+        width: 100%;
+    }
+    .contact__searching form {
+        width: 100%;
+        height: 50px;
+    }
+    .contact__searching input {
+        font-size: 1rem;
+    }
+    .contact__searching button {
+        height: 48px;
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:560px) {
+   
+    .contact {
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 830px;
+    }
+    .contact__img, .contact__form{
+        width: 100%;
+        height: 415px;
+    }
+    .contact__img__info {
+        transform: translate(190%);
+    }
+    .contact__header {
+        padding-left: 10px;
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+    .contact__text {
+        width: 140px;
+        font-size: 0.875rem;
+    }
+    .contact__text:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .contact__form {
+        padding-top: 21px;
+    }
+    .contact__form::after {
+        width: 80px;
+        height: 80px;
+        top: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .contact__searching form {
+        width: 100%;
+        height: 40px;
+    }
+    .contact__searching input {
+        font-size: 1rem;
+    }
+    .contact__searching button {
+        height: 38px;
+        font-size: 1rem;
+    }
+}
+
 /* for mobile */
 @media (max-width:400px) {
+    .contact__header {
+        font-size: 2.5rem;
+    }
+    .contact__text {
+        font-size: 0.875rem;
+    }
+    
     
 }
