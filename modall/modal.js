@@ -22,6 +22,7 @@ nextBtns.forEach((btn) => {
   });
 
 });
+
 prevBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     formStepsNum--;
