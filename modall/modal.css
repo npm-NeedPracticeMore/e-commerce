@@ -1,0 +1,531 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* o'chirib tashlanadi, */
+#openModal {
+  width: 200px;
+  height: 100px;
+  background: #40Bfff;
+  font-size: large;
+  margin: 10%;
+}
+
+.modal::selection {
+  cursor: auto;
+}
+
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 85%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 10px 50px;
+
+}
+
+/* Progressbar */
+.progressbar {
+  width: 20%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  counter-reset: step;
+}
+
+.progressbar_center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+
+}
+
+.progressbar::before,
+.progress {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  background-color: #dcdcdc;
+  z-index: -1;
+}
+
+.progress {
+  background-color: #40Bfff;
+  width: 0%;
+  transition: 0.3s;
+}
+
+.progress-step {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  background-color: #dcdcdc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-step::before {
+  counter-increment: step;
+  content: counter(step);
+}
+
+
+.progress-step-active {
+  background-color: #40Bfff;
+  color: #f3f3f3;
+}
+
+.form-step {
+  display: none;
+  transform-origin: top;
+  animation: animate 0.5s;
+}
+
+.form-step-active {
+  display: block;
+}
+
+.arrow_left {
+  width: 20px;
+  height: 20px;
+}
+
+.arrow_left:hover {
+  cursor: pointer;
+}
+
+.header_img {
+  display: flex;
+  align-items: center;
+}
+
+.header_img div {
+  width: 50%;
+}
+
+.close_times {
+  display: flex;
+  justify-content: flex-end;
+  color: #40BFFF;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+.headr_payment {
+  color: #40Bfff;
+  text-align: center;
+  font-weight: 600;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+
+}
+
+.left,
+.right,
+.left1,
+.right1 {
+  width: 47%;
+}
+
+
+input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+  background: #DFDEDE;
+
+}
+
+input:focus {
+  outline: none;
+}
+
+#address {
+  height: 122px;
+  width: 100%;
+  background: #DFDEDE;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  resize: none;
+  margin: 25px 0;
+
+}
+
+#address:focus {
+  outline: none;
+}
+
+.email {
+  margin-top: 25px;
+}
+
+.select {
+  color: #40BFFF;
+  letter-spacing: 0.5px;
+  font-size: 20;
+  margin: 10px 0 0 0;
+}
+
+.select_payment {
+  display: flex;
+  justify-content: space-between;
+  height: 46px;
+  align-items: center;
+  padding: 0 10px 0 0;
+}
+
+.select_payment label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.select_payment label img {
+  margin: 0 10px;
+}
+
+.select_payment2 {
+  display: flex;
+  justify-content: space-between;
+  height: 46px;
+  align-items: center;
+  padding: 0 10px 0 0;
+
+
+}
+
+.select_payment2 label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.select_payment2 label img {
+  margin: 0 10px;
+}
+
+.select_payment3 {
+  display: flex;
+  justify-content: space-between;
+  height: 46px;
+  align-items: center;
+  padding: 0 10px 0 0;
+
+}
+
+.select_payment3 label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.select_payment3 label img {
+  margin: 0 10px;
+}
+
+
+.label {
+  width: 100%;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #223263;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+
+}
+
+.label input {
+  width: 24px;
+  height: 24px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background: #40BFFF;
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.card_img {
+  height: 160px;
+  width: 300px;
+  margin-top: 5px;
+}
+
+.card_cvv {
+  width: 48%;
+}
+
+.card_number {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+
+}
+
+.card_input {
+  margin-top: 20px;
+}
+
+.card_save input {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+
+}
+
+.card_save {
+  display: flex;
+  align-items: center;
+  margin: 25px 0;
+}
+
+.confirm {
+  margin-top: 25px;
+}
+
+.success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #223263;
+}
+
+.complete {
+  margin-top: 50px;
+}
+
+@keyframes animate {
+  from {
+    transform: scale(1, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .modal-content {
+    width: 80%;
+    height: 80%;
+    overflow-y: scroll;
+    padding: 20px;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left,
+  .right,
+  .left1,
+  .right1 {
+    width: 100%;
+  }
+
+  .right {
+    margin-top: 20px;
+  }
+
+  .progressbar {
+    width: 50%;
+
+  }
+
+  .btn {
+    width: 50%;
+    height: 70px;
+    margin-top: 15px;
+    font-size: 30px;
+  }
+
+  input {
+    height: 70px;
+    font-size: 24px;
+
+  }
+
+  #address {
+    font-size: 24px;
+  }
+
+  .label {
+    font-size: 24px;
+  }
+
+  .label img {
+    width: 40px;
+    height: 40px;
+  }
+  .select {
+    margin: 25px 0 15px 0;
+    font-size: 32px;
+}
+.headr_payment {
+  font-size: 50px;
+
+}
+.progressbar {
+  width: 40%;
+  font-size: 25px;
+
+}
+.progress-step {
+  width: 4rem;
+  height: 4rem;
+ 
+}
+.label input {
+  width: 40px;
+  height: 40px;
+}
+.arrow_left {
+  width: 40px;
+  height: 40px;
+}
+.close {
+  font-size: 80px;
+}
+.card_img {
+ display: block;
+ margin: 10px auto;
+}
+.card_save {
+  font-size: 24px;
+}
+.card_save input {
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+.success {
+  font-size: 40px;
+}
+}
+
+  @media screen and (max-width: 768px) {
+    .modal-content {
+      width: 100%;
+      height: 100%;
+      overflow-y: scroll;
+    }
+
+   
+
+    .left,
+    .right,
+    .left1,
+    .right1 {
+      width: 100%;
+    }
+
+    .right {
+      margin-top: 20px;
+    }
+
+    .progressbar {
+      width: 50%;
+
+    }
+
+    .btn {
+      width: 100%;
+      margin-top: 15px;
+      font-size: 30px;
+    }
+
+    input {
+      font-size: 18px;
+    }
+
+    #address {
+      font-size: 18px;
+    }
+
+    .select {
+      margin: 25px 0 15px 0;
+      
+    }
+    .arrow_left {
+      width: 30px;
+      height: 30px;
+    }
+    .close {
+      font-size: 50px;
+    }
+    .progress-step {
+      width: 3rem;
+      height: 3rem;
+     
+    }
+    .select {
+      font-size: 25px;
+  }
+  .label {
+    font-size: 18px;
+  }
+    }
