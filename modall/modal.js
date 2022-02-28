@@ -18,16 +18,21 @@ nextBtns.forEach((btn) => {
     formStepsNum++;
     updateFormSteps();
     updateProgressbar();
+
   });
 
 });
-
 prevBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     formStepsNum--;
+    if (formStepsNum < 0) {
+      formStepsNum = 0;
+    }
     updateFormSteps();
     updateProgressbar();
-    
+
+
+
   });
 });
 
@@ -35,10 +40,12 @@ function updateFormSteps() {
   formSteps.forEach((formStep) => {
     formStep.classList.contains("form-step-active") &&
       formStep.classList.remove("form-step-active");
+
   });
 
   formSteps[formStepsNum].classList.add("form-step-active");
 }
+
 
 function updateProgressbar() {
   progressSteps.forEach((progressStep, idx) => {
@@ -59,3 +66,10 @@ function closeModal() {
   let close = document.getElementsByClassName("modal")[0];
   close.style.display = "none";
 }
+
+// function formSeps() {
+//   if (formStepsNum == 0) {
+//     document.getElementById("form-step-1").style.display = "none";
+//     document.getElementById("form-step-2").style.display = "block";
+//   }
+// }
