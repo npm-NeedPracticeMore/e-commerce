@@ -20,10 +20,10 @@ body{
 }
 .container{
     width: 1345px;
-    margin: auto;
+    margin: 0 auto;
 }
 .headr_top{
-    margin-top: 40px    ;
+    margin-top: 40px;
 }
 .headr_top,
 .headr_bottom,
@@ -132,8 +132,7 @@ ul a:hover{
    color:  var(--blue);
 }
 footer{
-    margin-left: 10px;
-    padding-top: 174px;
+    padding-top: 74px;
     padding-bottom: 31px;
     background-color:  var(--aqua);;
 }

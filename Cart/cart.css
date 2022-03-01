@@ -4,8 +4,7 @@
 }
 .cart-page
 {
-    width: 1500px;
-    height: 2006px;
+    width: 1345px;
     margin: 0px auto;
     overflow: hidden;
     display: grid;
@@ -20,13 +19,7 @@
     height: 1084px;
     margin: 10px auto;
 }
-.header{
-    max-width: 1500px ;
-    height: 243.09px;
-    background-color: aqua;
-   
 
-}
 .card_product{
     width: 1256.11px;
     height: 523px;
@@ -248,10 +241,3 @@ margin: 25px 5px;
 
 
 /* footer qismi */
-.footer
-{
-    max-width: 1500px;
-    height: 680.59px;
-    background: #BCDDFE;
-
-}
