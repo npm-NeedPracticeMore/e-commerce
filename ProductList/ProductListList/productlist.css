@@ -40,6 +40,7 @@
     flex-direction: column;
     align-items: center;
     width: 100vw;
+    /* height: 1000px; */
 
 }
 
@@ -91,6 +92,7 @@
 
 section{
     width: 90%;
+    
 }
 
 .hot-deals{
@@ -142,8 +144,10 @@ section{
 
 
 .hot-deals-right{
-    width: 1000px;
-    margin-left: 30px;
+
+    width: 961px;
+    height: 100%;
+    margin-left: 30px
 }
 
 .hot-deals-right-first{
@@ -445,9 +449,8 @@ section{
 .products{
     margin-top: 30px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
+    height: 1200px;
+    background-color: var(--blue);
 }
 
 .side-bar{
@@ -483,7 +486,6 @@ section{
     width: 90%;
     height: 680px;
     background-color: var(--blue);
-    margin-top: 400px;
 }
 
 
@@ -562,299 +564,4 @@ section{
   text-align: right;
   right: 0;
   bottom: 50px;
-}
-
-.best-seller__title {
-    margin: 0;
-    margin-bottom: 26px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 35px;
-    line-height: 52px;
-    color: #22262A;
-  }
-  
-  .categories{
-    display: none;
-  }
-  
-  .flashSale{
-    display: none;
-  }
-  
-  .best-seller__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin: 0;
-    margin-bottom: 23.5px;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .best-seller__item + .best-seller__item {
-    margin-left: 70px;
-  }
-  
-  .best-seller__link {
-    color: #373737;
-    font-size: 22px;
-    line-height: 33px;
-    text-decoration: none;
-    border-bottom: 3px solid transparent;
-    -webkit-transition: color , border-color 0.5s ease;
-    transition: color  0.5s ease;
-  }
-  
-  .best-seller__link:hover {
-    color: #40BFFF;
-    border-color: #40BFFF;
-  }
-  
-  .best-seller__sublist {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .best-seller__subitem {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    border: 2px solid #f6f7f8;
-    margin-bottom: 35.5px;
-    background-color: white;
-  }
-
-
-  
-  .best-seller__subitem:hover .best-seller__page{
-    opacity: 0.95;
-    transition: opacity 0.5s ease;
-    width: 275px;
-  }
-  
-  /* .best-seller__subitem + .best-seller__subitem {
-    margin-left: 42px;
-  }
-  
-  .best-seller__subitem:nth-child(4){
-    margin-left: 0;
-  }
-  .best-seller__subitem:nth-child(7){
-    margin-left: 0;
-  } */
-  
-  .best-seller__product-img {
-    width: 30%;
-    height: 275px;
-    margin-bottom: 14.77px;
-  }
-  
-  
-  .best-seller__box {
-    padding: 0 39.33px 16.5px;
-    width: 70%;
-  }
-  
-  .best-seller__page{
-    position: absolute;
-    z-index: 2;
-    display: flex;
-    width: 114px;
-    margin: 0 auto;
-    padding: 82px 83px 86px 82px;
-    background-color: #fff;
-    justify-content: space-between;
-    opacity: 0;
-    top: 27px;
-    left: 11px;
-  }
-  .best-seller__subimg{
-    cursor: pointer;
-  }
-  
-  .best-seller__subtitle {
-    margin: 0;
-    margin-bottom: 6.31px;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 150%;
-    letter-spacing: 0.5px;
-  }
-
-  .best-seller_star-view_container{
-      display: flex;
-      align-items: center;
-      width: 100%;
-      margin-bottom: 25px;
-      margin-top: 10px;
-  }
-
-  .best-seller_line{
-      width: 400px;
-      margin-bottom: 10px;
-      color: rgb(145, 153, 177, 0.4);
-  }
-  
-  .best-seller__mark {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: flex-start;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .best-selle__paragraph{
-      font-size: 15px;
-      margin: 13px 0;
-  }
-
-  .best-sellet_addButton_container{
-      display: flex;
-      margin-top: 24px;
-  }
-
-  .best-seller_button{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 150px;
-      height: 40px;
-      background-color: #EBF5FF;
-      border-radius: 3px;
-  }
-
-  .best-seller__basket{
-        width: 30px;
-        height: 30px;
-        margin-right: 10px;
-  }
-
-  .best-seller__heart{
-      width: 30px;
-      height: 30px;
-  }
-
-  .best-seller_button .button-title{
-      color: #40BFFF;
-      font-size: 14px;
-      font-weight: bold;
-  }
-
-  .bestseller_heart{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 40px;
-      height: 40px;
-      background-color: #EBF5FF;
-      border-radius: 3px;
-      margin-left: 20px;
-  }
-
-  .best-seller_star-view_container .review_count{
-      font-size: 17px;
-      color: #888;
-      margin: 0 15px 0 0;
-  }
-
-  .best-seller_star-view_container .submit-a-review{
-    font-size: 18px;
-    color: #40BFFF;
-    
-}
-
-  
-  .best-seller__mark-item + .best-seller__mark-item {
-    margin-left: 13.66px;
-  }
-
-  .best-seller__mark-item{
-      width: 14px;
-      height: 14px;
-  }
-
-  .best-seller__star{
-      width: 100%;
-      height: 100%;
-  }
-  
-  .best-seller__mark-item:nth-child(5) {
-    margin-right: 30px;
-  }
-  
-  .best-seller__newPrice {
-    margin-right: 13px;
-    font-size: 20px;
-    font-weight: 900;
-    line-height: 180%;
-    letter-spacing: 0.5px;
-    color: #40BFFF;
-    text-decoration: none;
-  }
-  
-  .best-seller__previousPrice {
-    margin-right: 8px;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.5px;
-    color: #9098B1;
-  }
-  
-  .best-seller__costDiscount {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.5px;
-    color: #FB7181;
-    background-color: transparent;
-  }
-  .best-seller__bottom-span{
-    display: block;
-    text-align: center;
-  }
-  
-  .best-seller__bottom-link{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-    color: #373737;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-    transition: color 0.5s ease ;
-  }
-  
-  
-  
-  .best-seller__bottom-link:hover{
-    color: #40BFFF;
-    border-color: #40BFFF;
-  }
-  
-.best-seller__subitem .hot{
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 30px;
-  background-color: rgb(219, 65, 96);
-  color: white;
-  border-radius: 2px;
 }
