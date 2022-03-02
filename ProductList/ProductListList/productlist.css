@@ -1182,6 +1182,11 @@ color: #262626;
     width: 100%;
   }
 
+  .best-seller__box{
+    width: 100%;
+    padding-left: 15px;
+  }
+
   .best-seller__sublist{
     width: 100%;
     display: flex;
@@ -1240,6 +1245,7 @@ color: #262626;
     height: 50px;
     background-color: #EBF5FF;
     border-radius: 3px;
+    
 }
   .bestseller_heart{
     width: 70px;
