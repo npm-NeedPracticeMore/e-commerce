@@ -166,8 +166,7 @@ select{
 .home a{
   margin-left: 15px;
   font-family: 'pop-m';
-  font-weight: 600;
-  font-size: 20px;
+
   line-height: 36px;
   color: #262626;
   margin: 0 0 0 70px;
@@ -768,7 +767,7 @@ section{
     justify-content: center;
     position: relative;
     z-index: 1;
-    width: 298px;
+    width: 280px;
     border: 2px solid #f6f7f8;
     margin-bottom: 35.5px;
     background-color: white;
@@ -783,7 +782,7 @@ section{
   }
   
   .best-seller__subitem + .best-seller__subitem {
-    margin-left: 42px;
+    margin-left: 12px;
   }
   
   .best-seller__subitem:nth-child(4){
@@ -931,7 +930,7 @@ section{
 
 footer{
   margin-left: 10px;
-  padding-top: 174px;
+  padding-top: 74px;
   padding-bottom: 31px;
   background-color:  var(--aqua);;
   width: 100%;
@@ -1114,7 +1113,7 @@ color: #262626;
 
 
 
-@media screen and (max-width: 500px){
+@media (max-width: 500px){
   .navbar{
     display: none;
   }

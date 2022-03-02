@@ -1,12 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="modal.css" />
+  <script src="modal.js" defer></script>
+  <title>Modal</title>
 </head>
+
 <body>
-    
+  <button onclick="openModal()" id="openModal">openModal</button>
+  <div class="modal">
+    <div class="modal-content">
+      <form action="#" class="form">
+        <div class="modal-header">
+          <div class="header_img">
+            <div>
+              <img src="../assets/arrow_left.png" alt="" class="arrow_left btn-prev">
+            </div>
+            <div class="close_times">
+              <span onclick="closeModal()" class="close">&times;</span>
+            </div>
+          </div>
+          <h1 class="headr_payment">Make Payment</h1>
+
+        </div>
+        <!-- Progress bar -->
+        <div class="progressbar_center">
+          <div class="progressbar">
+            <div class="progress" id="progress"></div>
+
+            <div class="progress-step progress-step-active"></div>
+            <div class="progress-step"></div>
+            <div class="progress-step"></div>
+          </div>
+
+        </div>
+
+
+        <!-- Steps -->
+        <div class="form-step form-step-active">
+          <div class="input-group">
+            <div class="left">
+              <input type="text" id="firstname" placeholder="   First Name" required>
+            </div>
+            <div class="right">
+              <input type="text" id="lastname" placeholder="   Last Name" required>
+            </div>
+            <div class="left1">
+              <input type="email" id="email" placeholder=" Email Address" required class="email">
+              <h2 class="select">Select Method of Payment</h2>
+              <div class="label">
+                <div class="select_payment">
+                  <label for=""><img src="../assets/Credit Card.png" alt=""> Credit Card Or
+                    Debit</label>
+                  <input type="checkbox" name="" id="checkbox1">
+                </div>
+                <div class="select_payment2">
+                  <label for=""><img src="../assets/Paypal.png" alt=""> Paypal</label>
+                  <input type="checkbox" name="" id="checkbox1">
+                </div>
+                <div class="select_payment3">
+                  <label for=""><img src="../assets/Bank.png" alt=""> Credit Card Or Debit</label>
+                  <input type="checkbox" name="" id="checkbox1">
+                </div>
+              </div>
+            </div>
+            <div class="right1">
+              <textarea name="" id="address" cols="30" rows="10" placeholder=" Address for Delivery"></textarea>
+              <input type="tel" name="" id="mobile" placeholder="  Mobile Phone">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button" class="btn btn-next ">Go to Payment</a>
+          </div>
+        </div>
+
+
+
+        <div class="form-step">
+          <div class="input-group">
+            <div class="left">
+              <img src="../assets/CreditCard.png" alt="" class="card_img">
+            </div>
+            <div class="right">
+              <input type="text" id="card_number" placeholder="   Card Number" required class="card_input">
+              <div class="card_number">
+                <input type="text" name="" id="" placeholder="  Expiry" class="card_cvv">
+                <input type="text" name="" id="" placeholder="  CVV" class="card_cvv">
+              </div>
+              <input type="text" name="" id="" placeholder="Holder Number">
+              <div class="card_save">
+                <input type="checkbox" name="" id="">
+                <label for="">Save this credit card</label>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button" class="btn btn-next confirm">Confirm</a>
+          </div>
+        </div>
+
+
+        <div class="form-step">
+          <div class="success">
+            <img src="../assets/Success Icon.png" alt="">
+            <h1>Success</h1>
+          </div>
+          <div class="modal-footer">
+            <button" class="btn complete">Complete</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
 </body>
+
 </html>
