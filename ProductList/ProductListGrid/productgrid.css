@@ -167,7 +167,7 @@ select{
   margin-left: 15px;
   font-family: 'pop-m';
   font-weight: 600;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 36px;
   color: #262626;
   margin: 0 0 0 70px;
@@ -1071,10 +1071,175 @@ color: #262626;
   margin-left: 20px;
 }
 
+.menu-bar{
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  background-color: whitesmoke;
+  padding: 0 23px;
+}
+
+.fa-bars{
+  font-size:25px;
+}
+
+
+.homee{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 170px;
+  height: 200px;
+  z-index: 100;
+  background-color: #40BFFF;
+
+
+}
+
+.homee li{
+  list-style: none;
+}
+
+.homee li a{
+  font-size: 20px;
+  color: #444;
+}
 
 
 
 
+@media screen and (max-width: 500px){
+  .navbar{
+    display: none;
+  }
+
+  .hot-deals-left{
+    display: none;
+  }
+
+  section{
+    width: 100%;
+  }
+
+  .hot-deals-right{
+    margin-left: 0;
+  }
+
+  .hotdeals-right-top{
+    display: none;
+  }
+
+  .hot-deals-right-first{
+    height: auto;
+  }
+
+  .products{
+    width: 100%;
+  }
+
+  .best-seller__sublist{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .best-seller__subitem{
+    width: 80%;
+    margin-left: 0;
+  }
 
 
+  .best-seller__subitem + .best-seller__subitem {
+    margin-left: 0;
+  }
 
+
+  .best-seller__subitem:hover .best-seller__page{
+    opacity: 0.95;
+    transition: opacity 0.5s ease;
+    width: 330px;
+    margin-left: 20px;
+  }
+
+  footer{
+    margin-top: 1950px;
+  }
+  
+  .footer_top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer_title{
+    margin: 10px 0;
+    width: 90%;
+  }
+
+  .footer_title .comm{
+    font-size: 30px;
+  }
+
+  .title_lorem{
+    width: 100%;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .footer_title .title{
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .footer_title .title_since{
+    width: 100%;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .footer_title .title_comn{
+    width: 100%;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .footer_bottom{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer_box{
+    margin: 10px 0;
+
+    width: 90%;
+  }
+
+  .bottom_title{
+    font-size: 30px;
+  }
+
+  .footer_box .about{
+    width: 100%;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .menu-bar{
+    display: flex;
+  }
+
+  .fa-bars{
+    font-size:25px;
+  }
+
+
+  
+
+}
