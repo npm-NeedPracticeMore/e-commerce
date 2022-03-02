@@ -858,7 +858,7 @@ section{
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 150px;
+      width: 130px;
       height: 40px;
       background-color: #EBF5FF;
       border-radius: 3px;
@@ -1153,7 +1153,7 @@ color: #262626;
 
 
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 476px){
   .navbar{
     display: none;
   }
@@ -1204,7 +1204,7 @@ color: #262626;
   .best-seller__subitem:hover .best-seller__page{
     opacity: 0.95;
     transition: opacity 0.5s ease;
-    width: 330px;
+    width: 295px;
     margin-left: 20px;
   }
 
@@ -1223,21 +1223,20 @@ color: #262626;
   }
 
   .best-selle__paragraph{
-    width: 310px;
+    width: 285px;
 
   }
 
   .best-sellet_addButton_container{
     width: 310px;
     display: flex;
-    justify-content: space-around;
   }
 
   .best-seller_button{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 230px;
+    width: 170px;
     height: 50px;
     background-color: #EBF5FF;
     border-radius: 3px;
