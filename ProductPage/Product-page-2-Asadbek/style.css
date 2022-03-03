@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+ul.navs {
+  display: flex;
+  list-style-type: none;
+  padding: 2% 5%;
+  /* border-bottom: 3px solid #2e90e5; */
+}
+
+ul li {
+  display: flex;
+  list-style-type: none;
+  margin: 2%;
+}
+
+main {
+  margin: 2% 5% 0 3%;
+  height: 382.79931640625px;
+  width: 924.5838623046875px;
+  left: 1.59375px;
+  top: 616.20068359375px;
+  border-radius: 0px;
+  background-color: #f1f1f1;
+}
+
+.nav {
+  margin: 2% 5%;
+}
+
+span {
+  left: 29.24%;
+  right: 69.91%;
+  top: 65.41%;
+  bottom: 32.56%;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 30px;
+  color: #262626;
+  margin: 0 5px;
+  opacity: 0.25;
+}
+
+.active {
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2e90e5;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #2e90e5;
+}
+
+.content {
+  /* padding: 2px;
+  margin: 5px;
+
+  background-color: bisque;
+  font-size: 16px; */
+  left: 2.61%;
+  right: 36.33%;
+  top: 72.73%;
+  bottom: 20.66%;
+
+  /* Body Text/NormalRegular */
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 180%;
+  /* or 22px */
+
+  letter-spacing: 0.5px;
+
+  /* Neutral/Grey */
+
+  color: #9098b1;
+  margin: 15px 60px;
+}
+
+section h1 {
+  text-align: center;
+  margin: 50px 0;
+}
+.forImage1 {
+  width: 270px;
+  height: 250px;
+  background-image: url(./imgs/yellowLineShoe.png);
+  object-fit: cover;
+  background-position: center center;
+  background-size: cover;
+}
+.forImage2 {
+  width: 270px;
+  height: 250px;
+  background-image: url(./imgs/darkredBag.png);
+  object-fit: cover;
+  background-position: center center;
+  background-size: cover;
+}
+.forImage3 {
+  width: 270px;
+  height: 250px;
+  background-image: url(./imgs/womanBagWhite.png);
+  object-fit: cover;
+  background-position: center center;
+  background-size: cover;
+}
+.forImage4 {
+  width: 270px;
+  height: 250px;
+  background-image: url(./imgs/blueShoeSide.png);
+  object-fit: cover;
+  background-position: center center;
+  background-size: cover;
+}
+/* .product-list img {
+  width: 100%;
+  object-fit: cover;
+} */
+
+img.product-img {
+  width: 220px;
+}
+
+.product-list {
+  text-align: center;
+  margin: 15px;
+  border: none;
+  border-radius: 3px;
+  position: relative;
+}
+
+.product-lists {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+.checked {
+  color: #ffc600;
+}
+
+.price {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 180%;
+  letter-spacing: 0.5px;
+  color: #40bfff;
+}
+
+.lowed {
+  color: #9098b1;
+  font-size: 16px;
+}
+
+#hot {
+  color: red;
+
+  font-family: "Poppins";
+}
+
+.hotPrice {
+  color: white;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4px 6px;
+  letter-spacing: 1px;
+}
