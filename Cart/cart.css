@@ -241,3 +241,56 @@ margin: 25px 5px;
 
 
 /* footer qismi */
+/* responsive */
+@media screen and (max-width: 480px){
+
+.divider{
+    display: none;
+}
+.nav_content>div{
+    float: none;
+}
+.nav_content{
+    text-align: left;
+    width: 100%;
+    margin-left: 20px;
+    float: none;
+}
+.tex{
+    float: none !important;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.tex:first-child(1){
+    margin-right: 15px !important;
+}
+.tex:hover{
+    background-color: #33A0FF;
+    color: #d7e2ec;
+    width: 150px;
+    border-radius: 15px;
+    font-size: 16px;
+}
+.cart-page{
+    width: 100%;
+}
+.content{
+    width: 100%;
+}
+.inp button{
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+
+}
+@media screen and (max-width: 361px){
+
+.product_left p{
+    font-size: 14px;
+}
+
+
+}
